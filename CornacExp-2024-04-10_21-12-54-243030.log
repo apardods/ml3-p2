@@ -1,0 +1,65 @@
+
+TEST:
+...
+                                                               |      MAE |     RMSE | Train (s) | Test (s)
+-------------------------------------------------------------- + -------- + -------- + --------- + --------
+WMF(K=10, learning_rate=0.001, lambda_u=0.001, lambda_v=0.001) | 479.4458 | 726.2988 |    5.4052 |   0.0010
+WMF(K=10, learning_rate=0.001, lambda_u=0.001, lambda_v=0.01)  | 479.4458 | 726.2988 |    0.9128 |   0.0010
+WMF(K=10, learning_rate=0.001, lambda_u=0.01, lambda_v=0.001)  | 479.4458 | 726.2988 |    1.0250 |   0.0070
+WMF(K=10, learning_rate=0.001, lambda_u=0.01, lambda_v=0.01)   | 479.4458 | 726.2988 |    1.0509 |   0.0000
+WMF(K=10, learning_rate=0.01, lambda_u=0.001, lambda_v=0.001)  | 469.7939 | 717.0199 |    1.0711 |   0.0097
+WMF(K=10, learning_rate=0.01, lambda_u=0.001, lambda_v=0.01)   | 469.7939 | 717.0197 |    0.8691 |   0.0130
+WMF(K=10, learning_rate=0.01, lambda_u=0.01, lambda_v=0.001)   | 469.8264 | 717.0520 |    1.0389 |   0.0010
+WMF(K=10, learning_rate=0.01, lambda_u=0.01, lambda_v=0.01)    | 469.8255 | 717.0511 |    0.9123 |   0.0092
+WMF(K=10, learning_rate=0.1, lambda_u=0.001, lambda_v=0.001)   | 435.5204 | 672.7734 |    0.9452 |   0.0113
+WMF(K=10, learning_rate=0.1, lambda_u=0.001, lambda_v=0.01)    | 438.0040 | 675.7007 |    0.8673 |   0.0010
+WMF(K=10, learning_rate=0.1, lambda_u=0.01, lambda_v=0.001)    | 445.4221 | 682.6277 |    0.9369 |   0.0099
+WMF(K=10, learning_rate=0.1, lambda_u=0.01, lambda_v=0.01)     | 444.6005 | 681.0954 |    0.9998 |   0.0010
+WMF(K=20, learning_rate=0.001, lambda_u=0.001, lambda_v=0.001) | 479.4106 | 726.2703 |    0.9219 |   0.0116
+WMF(K=20, learning_rate=0.001, lambda_u=0.001, lambda_v=0.01)  | 479.4106 | 726.2703 |    0.9059 |   0.0124
+WMF(K=20, learning_rate=0.001, lambda_u=0.01, lambda_v=0.001)  | 479.4106 | 726.2704 |    0.8984 |   0.0000
+WMF(K=20, learning_rate=0.001, lambda_u=0.01, lambda_v=0.01)   | 479.4106 | 726.2704 |    0.9000 |   0.0010
+WMF(K=20, learning_rate=0.01, lambda_u=0.001, lambda_v=0.001)  | 468.6315 | 715.3939 |    0.9889 |   0.0109
+WMF(K=20, learning_rate=0.01, lambda_u=0.001, lambda_v=0.01)   | 468.6307 | 715.3940 |    1.0179 |   0.0010
+WMF(K=20, learning_rate=0.01, lambda_u=0.01, lambda_v=0.001)   | 468.6756 | 715.4587 |    1.5657 |   0.0333
+WMF(K=20, learning_rate=0.01, lambda_u=0.01, lambda_v=0.01)    | 468.6759 | 715.4584 |    1.8921 |   0.0054
+WMF(K=20, learning_rate=0.1, lambda_u=0.001, lambda_v=0.001)   | 456.0696 | 699.9759 |    1.6973 |   0.0178
+WMF(K=20, learning_rate=0.1, lambda_u=0.001, lambda_v=0.01)    | 452.8806 | 695.1951 |    1.7718 |   0.0133
+WMF(K=20, learning_rate=0.1, lambda_u=0.01, lambda_v=0.001)    | 451.5069 | 694.3850 |    1.7293 |   0.0274
+WMF(K=20, learning_rate=0.1, lambda_u=0.01, lambda_v=0.01)     | 452.8259 | 696.4189 |    1.6875 |   0.0256
+WMF(K=30, learning_rate=0.001, lambda_u=0.001, lambda_v=0.001) | 479.3507 | 726.2247 |    1.7363 |   0.0188
+WMF(K=30, learning_rate=0.001, lambda_u=0.001, lambda_v=0.01)  | 479.3507 | 726.2247 |    1.7505 |   0.0192
+WMF(K=30, learning_rate=0.001, lambda_u=0.01, lambda_v=0.001)  | 479.3508 | 726.2248 |    1.7821 |   0.0145
+WMF(K=30, learning_rate=0.001, lambda_u=0.01, lambda_v=0.01)   | 479.3508 | 726.2248 |    1.7675 |   0.0200
+WMF(K=30, learning_rate=0.01, lambda_u=0.001, lambda_v=0.001)  | 468.4174 | 712.1532 |    1.7626 |   0.0159
+WMF(K=30, learning_rate=0.01, lambda_u=0.001, lambda_v=0.01)   | 468.4239 | 712.1623 |    1.7166 |   0.0332
+WMF(K=30, learning_rate=0.01, lambda_u=0.01, lambda_v=0.001)   | 468.2667 | 711.9808 |    1.8549 |   0.0144
+WMF(K=30, learning_rate=0.01, lambda_u=0.01, lambda_v=0.01)    | 468.2883 | 712.0040 |    1.8284 |   0.0160
+WMF(K=30, learning_rate=0.1, lambda_u=0.001, lambda_v=0.001)   | 474.4885 | 718.8999 |    1.9036 |   0.0361
+WMF(K=30, learning_rate=0.1, lambda_u=0.001, lambda_v=0.01)    | 473.5127 | 719.6346 |    1.4345 |   0.0107
+WMF(K=30, learning_rate=0.1, lambda_u=0.01, lambda_v=0.001)    | 472.6050 | 716.8971 |    0.9944 |   0.0020
+WMF(K=30, learning_rate=0.1, lambda_u=0.01, lambda_v=0.01)     | 470.9741 | 717.3434 |    1.0142 |   0.0020
+WMF(K=40, learning_rate=0.001, lambda_u=0.001, lambda_v=0.001) | 479.2423 | 726.1281 |    1.0255 |   0.0075
+WMF(K=40, learning_rate=0.001, lambda_u=0.001, lambda_v=0.01)  | 479.2424 | 726.1281 |    1.0682 |   0.0010
+WMF(K=40, learning_rate=0.001, lambda_u=0.01, lambda_v=0.001)  | 479.2423 | 726.1280 |    1.0469 |   0.0010
+WMF(K=40, learning_rate=0.001, lambda_u=0.01, lambda_v=0.01)   | 479.2423 | 726.1281 |    1.0150 |   0.0000
+WMF(K=40, learning_rate=0.01, lambda_u=0.001, lambda_v=0.001)  | 468.7093 | 712.1721 |    0.9704 |   0.0117
+WMF(K=40, learning_rate=0.01, lambda_u=0.001, lambda_v=0.01)   | 468.7157 | 712.1837 |    0.9857 |   0.0130
+WMF(K=40, learning_rate=0.01, lambda_u=0.01, lambda_v=0.001)   | 468.6024 | 712.0480 |    1.0012 |   0.0090
+WMF(K=40, learning_rate=0.01, lambda_u=0.01, lambda_v=0.01)    | 468.6136 | 712.0661 |    0.9941 |   0.0137
+WMF(K=40, learning_rate=0.1, lambda_u=0.001, lambda_v=0.001)   | 465.7820 | 710.6850 |    0.9635 |   0.0000
+WMF(K=40, learning_rate=0.1, lambda_u=0.001, lambda_v=0.01)    | 469.1990 | 714.4778 |    1.0014 |   0.0135
+WMF(K=40, learning_rate=0.1, lambda_u=0.01, lambda_v=0.001)    | 469.5671 | 712.7821 |    1.1454 |   0.0052
+WMF(K=40, learning_rate=0.1, lambda_u=0.01, lambda_v=0.01)     | 469.2278 | 712.9487 |    1.0413 |   0.0096
+WMF(K=50, learning_rate=0.001, lambda_u=0.001, lambda_v=0.001) | 479.1038 | 726.0247 |    1.2296 |   0.0102
+WMF(K=50, learning_rate=0.001, lambda_u=0.001, lambda_v=0.01)  | 479.1038 | 726.0247 |    1.4643 |   0.0119
+WMF(K=50, learning_rate=0.001, lambda_u=0.01, lambda_v=0.001)  | 479.1038 | 726.0247 |    0.9858 |   0.0137
+WMF(K=50, learning_rate=0.001, lambda_u=0.01, lambda_v=0.01)   | 479.1038 | 726.0247 |    1.1080 |   0.0071
+WMF(K=50, learning_rate=0.01, lambda_u=0.001, lambda_v=0.001)  | 463.4195 | 706.3015 |    0.9674 |   0.0010
+WMF(K=50, learning_rate=0.01, lambda_u=0.001, lambda_v=0.01)   | 463.4484 | 706.3276 |    1.0191 |   0.0135
+WMF(K=50, learning_rate=0.01, lambda_u=0.01, lambda_v=0.001)   | 463.4567 | 706.3631 |    0.9742 |   0.0082
+WMF(K=50, learning_rate=0.01, lambda_u=0.01, lambda_v=0.01)    | 463.4389 | 706.3443 |    0.9897 |   0.0090
+WMF(K=50, learning_rate=0.1, lambda_u=0.001, lambda_v=0.001)   | 473.7049 | 718.6706 |    1.1184 |   0.0010
+WMF(K=50, learning_rate=0.1, lambda_u=0.001, lambda_v=0.01)    | 472.9823 | 716.6742 |    1.0994 |   0.0010
+WMF(K=50, learning_rate=0.1, lambda_u=0.01, lambda_v=0.001)    | 469.1577 | 714.5930 |    1.0358 |   0.0120
+WMF(K=50, learning_rate=0.1, lambda_u=0.01, lambda_v=0.01)     | 470.3198 | 714.4375 |    0.9820 |   0.0010
